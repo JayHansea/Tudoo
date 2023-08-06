@@ -10,7 +10,8 @@ export default function App() {
         <Text style={styles.sectionTitle}>Today's Tasks</Text>
         <View style={styles.items}>
           {/* This is where the tasks will go! */}
-          <Task />
+          <Task  text={"Task1"}/>
+          <Task  text={"Task2"}/>
         </View>
       </View>
     </View>
@@ -30,5 +31,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
   },
-  items: {},
+  items: {
+    marginTop: 30,
+  },
 });
